@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+    <item
+        android:id="@+id/nav_item_one"
+        android:icon="@mipmap/login"
+        android:title="Login"/>
+
+    <item
+        android:id="@+id/nav_item_two"
+        android:icon="@mipmap/signup"
+        android:title="Sign up"/>
+    <item
+        android:id="@+id/nav_item_three"
+        android:icon="@mipmap/terms"
+        android:title="Terms &amp; conditions"/>
+    </group>
+    <item android:title="Landlords">
+        <menu>
+            <item android:id="@+id/nav_item_six"
+                android:icon="@mipmap/landlord"
+                android:title="Add House"/>
+            <item
+                android:id="@+id/landlordservices"
+                android:icon="@mipmap/lservices"
+                android:title="Essentials"
+                />
+
+        </menu>
+    </item>
+    <group android:id="@+id/group_menu">
+        <item android:title="Other services">
+        <menu>
+            <item android:id="@+id/nav_item_eight"
+                android:icon="@mipmap/carrier"
+                android:title="Carrier services"/>
+            <item android:id="@+id/laundry"
+                android:icon="@mipmap/laundry"
+                android:title="Laundry"/>
+
+        </menu>
+        </item>
+        <item android:id="@+id/nav_item_four"
+            android:icon="@mipmap/services"
+            android:title="Faqs"/>
+        <item android:id="@+id/about"
+            android:title="About App"
+            android:icon="@drawable/about"
+            />
+        <item android:id="@+id/nav_item_five"
+            android:icon="@mipmap/account"
+            android:title="Account"/>
+        <item
+            android:id="@+id/nav_item_seven"
+            android:icon="@mipmap/settings"
+            android:title="Settings"/>
+    </group>
+
+    <item
+        android:id="@+id/nav_item_nine"
+        android:icon="@mipmap/signout"
+        android:title="Sign out"/>
+</menu>

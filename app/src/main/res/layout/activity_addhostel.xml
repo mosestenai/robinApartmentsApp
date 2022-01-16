@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:paddingBottom="120dp"
+        tools:context=".addhostelActivity">
+
+        <EditText
+            android:id="@+id/hostel_name"
+            android:layout_width="287dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="House name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="location"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hostel_name" />
+
+        <EditText
+            android:id="@+id/landmarks"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Land marks"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <EditText
+            android:id="@+id/price_month"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:hint="price per month"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/landmarks" />
+
+        <EditText
+            android:id="@+id/paybill"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Paybill"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price_month" />
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password1" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password2" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="293dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="ADD HOUSE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/rooms"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:hint="Number of rooms"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        <EditText
+            android:id="@+id/idnumber"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="id number"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rooms" />
+
+        <EditText
+            android:id="@+id/bed_size"
+            android:layout_width="135dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="101dp"
+            android:ems="10"
+            android:hint="bed_size"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idnumber"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/floor_size"
+            android:layout_width="142dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:hint="floor_size"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bed_size"
+            app:layout_constraintTop_toBottomOf="@+id/idnumber"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountno" />
+
+        <CheckBox
+            android:id="@+id/kitchensink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_selector"
+            android:text="KITECHENSINK"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bed_size" />
+
+        <CheckBox
+            android:id="@+id/toilet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/button_selector"
+            android:text="TOILET"
+            app:layout_constraintStart_toEndOf="@+id/kitchensink"
+            app:layout_constraintTop_toBottomOf="@+id/bed_size" />
+
+        <CheckBox
+            android:id="@+id/bed"
+            android:layout_width="82dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_selector"
+            android:text="BED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.232"
+            app:layout_constraintStart_toEndOf="@+id/toilet"
+            app:layout_constraintTop_toBottomOf="@+id/floor_size" />
+
+        <CheckBox
+            android:id="@+id/bathroomsink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/button_selector"
+            android:text="BATHROOMSINK"
+            app:layout_constraintStart_toEndOf="@+id/chair"
+            app:layout_constraintTop_toBottomOf="@+id/bed" />
+
+        <CheckBox
+            android:id="@+id/matress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/button_selector"
+            android:text="MATRESS"
+            app:layout_constraintStart_toEndOf="@+id/ceiling"
+            app:layout_constraintTop_toBottomOf="@+id/dustbin" />
+
+        <CheckBox
+            android:id="@+id/tiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_selector"
+            android:text="TILES"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ceiling" />
+
+        <CheckBox
+            android:id="@+id/tables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/button_selector"
+            android:text="TABLES"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toEndOf="@+id/dustbin"
+            app:layout_constraintTop_toBottomOf="@+id/gate" />
+
+        <CheckBox
+            android:id="@+id/ceiling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/button_selector"
+            android:text="CEILING"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bathroom" />
+
+        <CheckBox
+            android:id="@+id/dustbin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/button_selector"
+            android:text="DUSTBIN"
+            app:layout_constraintStart_toEndOf="@+id/bathroom"
+            app:layout_constraintTop_toBottomOf="@+id/bathroomsink" />
+
+        <CheckBox
+            android:id="@+id/router"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_selector"
+            android:text="ROUTER"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.271"
+            app:layout_constraintStart_toEndOf="@+id/matress"
+            app:layout_constraintTop_toBottomOf="@+id/tables" />
+
+        <CheckBox
+            android:id="@+id/hotshower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_selector"
+            android:text="HOTSHOWER"
+            app:layout_constraintStart_toEndOf="@+id/tiles"
+            app:layout_constraintTop_toBottomOf="@+id/matress" />
+
+        <CheckBox
+            android:id="@+id/chair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/button_selector"
+            android:text="CHAIR"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kitchensink" />
+
+        <CheckBox
+            android:id="@+id/bathroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_selector"
+            android:text="BATHROOM"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chair" />
+
+        <CheckBox
+            android:id="@+id/gate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/button_selector"
+            android:text="GATE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintStart_toEndOf="@+id/bathroomsink"
+            app:layout_constraintTop_toBottomOf="@+id/toilet" />
+
+        <CheckBox
+            android:id="@+id/balcony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_selector"
+            android:text="BALCONY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.331"
+            app:layout_constraintStart_toEndOf="@+id/hotshower"
+            app:layout_constraintTop_toBottomOf="@+id/router" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="215dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="SUBMIT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotshower" />
+
+        <EditText
+            android:id="@+id/accountno"
+            android:layout_width="287dp"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Account no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paybill" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.robin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo2"
+        android:installLocation="auto"
+        android:label="robin"
+        android:roundIcon="@mipmap/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Robin.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ViewHostelActivity" />
+        <activity android:name=".student" />
+        <activity android:name=".pay" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".resetpasswordActivity" />
+        <activity android:name=".landlordActivity" />
+        <activity android:name=".addhostelActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".SearchActivity" />
+    </application>
+
+</manifest>

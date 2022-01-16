@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="286dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="28dp"
+        android:text="Admin page"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addhostel"
+        android:layout_width="268dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
+        android:textSize="23sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="ADD HOSTELS"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/addhotel"
+        android:layout_width="268dp"
+        android:layout_height="65dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="36dp"
+        android:textSize="23sp"
+        android:text="ADD HOTELS"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addhostel" />
+
+    <Button
+        android:id="@+id/viewusers"
+        android:layout_width="264dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="40dp"
+        android:text="VIEW USERS"
+        android:textSize="23sp"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addhotel" />
+
+    <Button
+        android:id="@+id/blockusers"
+        android:layout_width="265dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:text="BLOCK USERS"
+        android:textSize="23sp"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewusers" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

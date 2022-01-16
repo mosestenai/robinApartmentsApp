@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/white"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/homee"
+        android:fontFamily="cursive"
+        android:padding="17dp"
+        android:text="Get easy access to accomodation and other services"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="207dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="12dp"
+        android:text="Robin"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="214dp"
+        android:layout_height="50dp"
+        android:text="We offer House booking services at the comfort of your home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/proceed"
+        android:layout_width="232dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/navy"
+        android:text="Proceed"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="1dp"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_header_menu"
+        android:layout_gravity="start"
+     />
+</androidx.drawerlayout.widget.DrawerLayout>
